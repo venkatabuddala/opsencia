@@ -1,0 +1,333 @@
+.jvm-zoom-btn.jvm-zoomin,
+.jvm-zoom-btn.jvm-zoomout {
+  top: 10px;
+  background: #d1d5db;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.slick-dots {
+  display: flex !important;
+}
+
+.fc-toolbar-title {
+  font-size: 24px !important;
+  font-weight: 600;
+}
+
+.fc-button {
+  border-color: var(--primary-600) !important;
+  background: #fff !important;
+  color: var(--primary-600) !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-width: 80px !important;
+}
+
+.fc-button:hover {
+  background-color: var(--primary-50) !important;
+}
+
+.fc-button-active {
+  color: #fff !important;
+  background-color: var(--primary-600) !important;
+}
+
+.fc-button-active:hover {
+  color: #fff !important;
+  background-color: var(--primary-600) !important;
+}
+
+.fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+  box-shadow: none !important;
+}
+
+.fc-toolbar-chunk {
+  display: flex !important;
+}
+
+.fc .fc-button-primary:focus {
+  box-shadow: none !important;
+}
+
+.fc-h-event {
+  border: 0;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: var(--primary-50) !important;
+  color: var(--primary-600) !important;
+}
+
+.fc-h-event .fc-event-main {
+  border: 0;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: var(--primary-50) !important;
+  color: var(--primary-600) !important;
+}
+
+.fc-v-event .fc-event-main {
+  border: 0;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: var(--primary-50) !important;
+  color: var(--primary-600) !important;
+}
+
+.fc-daygrid-day-number {
+  transition: background-color 0.2s;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.fc-daygrid-day:hover .fc-daygrid-day-number {
+  background-color: var(--primary-100) !important;
+  color: var(--primary-600) !important;
+  transition: background-color 0.2s;
+}
+
+.slider-progress .active {
+  transition: all 0.3s linear;
+}
+
+.slick-list {
+  margin: 0 -7px;
+}
+
+.slick-slide > div {
+  padding: 0 10px;
+}
+
+.center-gap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.inline-grid {
+  display: inline-grid;
+}
+
+.image-upload__boxInner.custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table.dataTable th.dt-type-numeric,
+table.dataTable th.dt-type-date,
+table.dataTable td.dt-type-numeric,
+table.dataTable td.dt-type-date {
+  text-align: unset !important;
+}
+
+/* Hide all submenus by default */
+.sidebar-submenu {
+  /* display: none; */
+  list-style: none;
+  padding-left: 20px;
+  /* Adjust as needed */
+}
+
+.sidebar-menu .sidebar-submenu {
+  display: block;
+}
+
+/* Optional: Add transition for smooth toggle */
+.sidebar-menu .dropdown .sidebar-submenu {
+  transition: max-height 0.3s linear;
+  overflow: hidden;
+  max-height: 0px;
+}
+
+/* .sidebar-menu .dropdown.open .sidebar-submenu {
+  max-height: 1000px;
+} */
+
+.sidebar-menu li > a > i {
+  margin-inline-end: 0;
+}
+
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.sidebar-menu .sidebar-submenu li a {
+  gap: 12px;
+}
+
+.sidebar-menu .sidebar-submenu li > .active-page {
+  background-color: var(--button-secondary);
+  color: var(--text-primary-light);
+}
+
+.sidebar-menu li > a.active-page:hover {
+  color: var(--text-primary-light);
+}
+.me-8 {
+  margin-right: 8px;
+}
+
+.gap-10 {
+  display: flex;
+  gap: 8px;
+}
+
+.w-33 {
+  width: 33.33%;
+}
+
+.overlay::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  inset-inline-start: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.65;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.overlay.active::after {
+  width: 100%;
+}
+
+.Gallery-masonry {
+  background: #000;
+  z-index: 99999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* brand overrides removed: rolling back to original styles */
+
+/* Opsencia brand tokens (used only for sidebar active state and buttons) */
+:root {
+  --opsencia-navy: #090f7c;
+  --opsencia-magenta: #e40580;
+  --opsencia-gradient: linear-gradient(90deg, var(--opsencia-navy) 0%, var(--opsencia-magenta) 100%);
+}
+
+/* Sidebar active/selected menu item */
+.sidebar-menu li > a.active-page,
+.sidebar-menu .sidebar-submenu li > a.active-page {
+  background-image: var(--opsencia-gradient) !important;
+  color: #ffffff !important;
+  border-radius: 10px;
+}
+
+.sidebar-menu li > a.active-page i,
+.sidebar-menu .sidebar-submenu li > a.active-page i {
+  color: #ffffff !important;
+}
+
+/* Make parent menu reflect active child */
+.sidebar-menu .dropdown.active-parent > a {
+  background-image: var(--opsencia-gradient) !important;
+  color: #ffffff !important;
+  border-radius: 10px;
+}
+.sidebar-menu .dropdown.active-parent > a i {
+  color: #ffffff !important;
+}
+
+/* Also highlight parent when the dropdown is currently open (clicked) */
+.sidebar-menu .dropdown.open > a {
+  background-image: var(--opsencia-gradient) !important;
+  color: #ffffff !important;
+  border-radius: 10px;
+}
+.sidebar-menu .dropdown.open > a i {
+  color: #ffffff !important;
+}
+
+/* Visual separation between top-level (parent) menu groups only */
+.sidebar-menu > li {
+  margin-bottom: 8px;
+}
+.sidebar-menu > li:last-child {
+  margin-bottom: 0;
+}
+
+/* Button brand styling */
+.btn.btn-primary,
+.btn.btn-primary-600,
+.btn.btn-primary:focus,
+.btn.btn-primary-600:focus,
+.btn.btn-primary:hover,
+.btn.btn-primary-600:hover {
+  background-image: var(--opsencia-gradient) !important;
+  border-color: var(--opsencia-navy) !important;
+  color: #ffffff !important;
+}
+
+.btn.btn-outline-primary-600 {
+  border-color: var(--opsencia-navy) !important;
+  color: var(--opsencia-navy) !important;
+}
+
+.btn.btn-outline-primary-600:hover,
+.btn.btn-outline-primary-600:focus {
+  background-image: var(--opsencia-gradient) !important;
+  color: #ffffff !important;
+  border-color: var(--opsencia-navy) !important;
+}
+
+/* Header icon buttons use same brand styling as buttons */
+.navbar-header .has-indicator,
+.navbar-header .sidebar-toggle,
+.navbar-header .sidebar-mobile-toggle {
+  background-image: var(--opsencia-gradient) !important;
+  border-color: var(--opsencia-navy) !important;
+  color: #ffffff !important;
+}
+.navbar-header .has-indicator .icon,
+.navbar-header .sidebar-toggle .icon,
+.navbar-header .sidebar-mobile-toggle .icon {
+  color: #ffffff !important;
+}
+
+/* Force any inner graphics within header round buttons to white */
+.navbar-header .has-indicator svg,
+.navbar-header .has-indicator i,
+.navbar-header .theme-toggle-btn svg,
+.navbar-header .theme-toggle-btn i {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+.navbar-header .has-indicator img,
+.navbar-header .theme-toggle-btn img {
+  filter: brightness(0) invert(1) !important; /* turn images (e.g., flags) white */
+}
+.navbar-header .has-indicator:hover,
+.navbar-header .sidebar-toggle:hover,
+.navbar-header .sidebar-mobile-toggle:hover {
+  filter: brightness(0.95);
+}
+
+/* Theme toggle matches brand buttons */
+.navbar-header .theme-toggle-btn {
+  background-image: var(--opsencia-gradient) !important;
+  border: 1px solid var(--opsencia-navy) !important;
+  color: #ffffff !important;
+}
+
+/* Notification & Message dropdown content to white on dark background */
+
